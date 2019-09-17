@@ -38,6 +38,146 @@
 --------------------------------------------------------------*/
 
 
+
 /*--------------------------------------------------------------
 3.0 - GENERIC 
--------------------------------------------------------------- */
+---------------------------------------------------------------*/
+
+* {
+	font-family: 'Roboto Slab', serif;
+}
+
+html {
+	font-size: 1rem;
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS
+---------------------------------------------------------------*/
+
+
+/*---------- LISTS ----------*/
+
+ul {
+	font-size: 0.75em;
+	line-height: 1.75em;
+	margin-top: 1.5em;
+}
+
+li {
+	margin-top: 1em;
+}
+
+
+
+/*---------- TYPOGRAPHY ----------*/
+
+
+/*--- Headings ---*/
+
+h1 {
+	font-size: 1.75em;
+	margin-top: 3em;
+}
+
+h2 {
+	font-size: 1.25em;
+	font-weight: 700;
+	margin-top: 2em;
+}
+
+
+/*--- Paragraphs ---*/
+
+p {
+	font-size: 0.75em;
+	line-height: 2em;
+	margin-top: 1.5em;
+}
+
+header > p:first-of-type {
+	font-size: 0.7em;
+}
+
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 1.25rem;
+	}
+	
+	header > p:first-of-type {
+		font-size: 0.65em;
+	}
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	html {
+		font-size: 1.5rem;
+	}
+	
+	h2 {
+		font-size: 1em;
+	}
+	
+	ul {
+		font-size: 0.7em;
+	}
+	
+	p {
+		font-size: 0.7em;
+	}
+	
+	header > p:first-of-type {
+		font-size: 0.55em;
+	}
+}
+
+
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+---------------------------------------------------------------*/
+
+
+/*---------- FRAMEWORK ----------*/
+
+article {
+	margin-left: calc(100% * 1 / 12);
+}
+
+article > section:last-child {
+	padding-bottom: 5em;
+}
+
+@media only screen and (min-width: 768px) {
+	article {
+		margin-left: calc(100% * 1 / 12);
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	article {
+		margin-left: calc(100% * 2 / 12);
+	}
+}
+
+
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES 
+---------------------------------------------------------------*/
+
+.bg-red {
+	background-color: #bf3a3a;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.font-sans {
+	font-family: 'Roboto', sans-serif;
+}
